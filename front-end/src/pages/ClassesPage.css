@@ -1,0 +1,30 @@
+.class-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-container {
+    width: 100%;
+    display: flex;
+  }
+  
+  .filter-container {
+    margin-top: 76px;
+    flex-basis: 33%;
+  }
+  
+  .classes-list-container {
+    flex-basis: 66%;
+  }
+  
+  /* Additional styles for SearchBar, Filter, and ClassesList components */
+  

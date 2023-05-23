@@ -1,0 +1,54 @@
+.classes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+}
+
+.classes-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.classes-list-header p {
+  margin: 0;
+  margin-right: auto;
+  margin-left: 40px;
+}
+
+.classes-list-header button {
+  margin-left: 10px;
+  margin-right: 34px;
+}
+
+.card-body table {
+  margin: 0 auto; /* Center the table horizontally */
+  border-collapse: collapse; /* Collapse the borders into a single border */
+}
+
+.card-body td {
+  text-align: left; /* Align the table cell content to the left */
+  padding: 8px; /* Add some padding to the table cells */
+  border: 1px solid #ccc; /* Add a border to each table cell */
+}
+
+.impressive-line {
+  margin-top: 30px;
+}
+
+.impressive-line p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  border-bottom: 2px solid #555;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: border-color 0.3s;
+}
+
+.impressive-line p:hover {
+  border-color: #50aadf;
+}

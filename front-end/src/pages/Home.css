@@ -1,0 +1,33 @@
+button {
+    background: #3d3a36;
+    color: #ffffff;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 16px;
+    transition: all 0.25s;
+  }
+  
+  button:hover {
+    border-color: #2c92e6;
+    color: #2c92e6;
+    box-shadow: 0 0.5em 0.5em -0.4em #2c92e6;
+    transform: translateY(-0.25em); 
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  

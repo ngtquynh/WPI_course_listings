@@ -1,0 +1,34 @@
+.controllers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.controllers-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  flex-basis: calc(50% - 5px);
+  max-width: calc(50% - 5px);
+}
+
+.controllers-link {
+  display: block;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.controllers-link:hover {
+  background-color: #ddd;
+}
