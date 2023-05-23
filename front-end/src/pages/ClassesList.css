@@ -35,11 +35,11 @@
   border: 1px solid #ccc; /* Add a border to each table cell */
 }
 
-.impressive-line {
+.line {
   margin-top: 30px;
 }
 
-.impressive-line p {
+.line p {
   font-size: 24px;
   font-weight: bold;
   color: #555;
@@ -49,6 +49,6 @@
   transition: border-color 0.3s;
 }
 
-.impressive-line p:hover {
+.line p:hover {
   border-color: #50aadf;
 }

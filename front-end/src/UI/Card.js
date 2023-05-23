@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Card.css';
 
-const Card = ({ title, description, header, footer, body }) => {
+const Card = ({ description, header, footer, body }) => {
   const [showDescription, setShowDescription] = useState(false);
 
   const toggleDescription = () => {

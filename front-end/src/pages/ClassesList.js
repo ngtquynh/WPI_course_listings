@@ -52,7 +52,7 @@ const ClassesList = ({ classes, filters }) => {
     <>
       <div className="classes-list">
         <div className="classes-list-header">
-          <div class="impressive-line">
+          <div class="line">
             <p>{`${filteredClasses.length} Matching Items`}</p>
           </div>
           <button onClick={toggleView}>
@@ -127,10 +127,14 @@ const ClassesList = ({ classes, filters }) => {
                 )
               }
               description={
-                <div>
+                <>
                   {showDetailedView && activeIndex === index && (
                     <>
-                      {course.Course_Description}
+                      <div 
+                        dangerouslySetInnerHTML={{
+                          __html: course.Course_Description,
+                        }}
+                      />
                       <p>
                         <a
                           href="https://wpi.bncollege.com/course-material/course-finder"
@@ -142,7 +146,7 @@ const ClassesList = ({ classes, filters }) => {
                       </p>
                     </>
                   )}
-                </div>
+                </>
               }
             />
           ))

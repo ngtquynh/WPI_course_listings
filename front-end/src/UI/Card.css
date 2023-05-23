@@ -15,9 +15,7 @@
   color: #000000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: height 0.5s ease-in-out;
-  /* ...existing styles... */
   overflow: hidden;
-  transition: height 0.5s ease-in-out;
 }
 
 .card:hover {
