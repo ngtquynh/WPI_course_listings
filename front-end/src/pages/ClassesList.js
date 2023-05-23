@@ -4,7 +4,7 @@ import "./ClassesList.css";
 
 const ClassesList = ({ classes, filters }) => {
   const [showDetailedView, setShowDetailedView] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(-1);
+  const [activeIndexes, setActiveIndexes] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [classesPerPage] = useState(100); // Number of classes to display per page
 
@@ -32,20 +32,25 @@ const ClassesList = ({ classes, filters }) => {
 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
-    setActiveIndex(-1);
+    setActiveIndexes([]);
   };
 
   const toggleDescription = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
+    setActiveIndexes((prevIndexes) => {
+      const newIndexes = [...prevIndexes];
+      newIndexes[index] = newIndexes[index] === index ? -1 : index;
+      return newIndexes;
+    });
   };
 
   const toggleView = () => {
     setShowDetailedView((prevState) => !prevState);
-    setActiveIndex(-1);
+    setActiveIndexes([]);
   };
 
   useEffect(() => {
-    setCurrentPage(1); // Reset current page when filters change
+    setCurrentPage(1);
+    setActiveIndexes([]);
   }, [filters]);
 
   return (
@@ -59,7 +64,7 @@ const ClassesList = ({ classes, filters }) => {
             {showDetailedView ? "Show condensed view" : "Show detailed view"}
           </button>
         </div>
-        {filteredClasses.length === 0 ? ( // Display a message if no classes match the filters
+        {filteredClasses.length === 0 ? (
           <p>No matching items found.</p>
         ) : (
           currentClasses.map((course, index) => (
@@ -120,7 +125,7 @@ const ClassesList = ({ classes, filters }) => {
               footer={
                 showDetailedView && (
                   <button onClick={() => toggleDescription(index)}>
-                    {activeIndex === index
+                    {activeIndexes[index] === index
                       ? "Hide Description"
                       : "Show Description"}
                   </button>
@@ -128,9 +133,9 @@ const ClassesList = ({ classes, filters }) => {
               }
               description={
                 <>
-                  {showDetailedView && activeIndex === index && (
+                  {showDetailedView && activeIndexes[index] === index && (
                     <>
-                      <div 
+                      <div
                         dangerouslySetInnerHTML={{
                           __html: course.Course_Description,
                         }}
