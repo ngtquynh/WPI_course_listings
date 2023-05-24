@@ -3,7 +3,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(174, 181, 202, 0.3);
   border-top: 1px solid #dee2e6;
   padding: 0.2rem 0;
 }
@@ -12,3 +12,4 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+

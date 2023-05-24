@@ -1,40 +1,39 @@
 .filter {
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    color:#333;
-    width: 90%;
-    margin-left: auto;
-  }
-  
-  .filter-row {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5rem;
-  }
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  select {
-    display: block;
-    width: 100%;
-  }
-  .filter-row label {
-    flex: 1;
-    font-weight: bold;
-  }
-  
-  .filter-row select {
-    flex: 2;
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-  .filter button {
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-  }
-  
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  color:#333;
+  width: 90%;
+  margin-left: auto;
+}
+
+.filter-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  display: block;
+  width: 100%;
+}
+.filter-row label {
+  flex: 1;
+  font-weight: bold;
+}
+
+.filter-row select {
+  flex: 2;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.filter button {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}

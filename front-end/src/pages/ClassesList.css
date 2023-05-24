@@ -25,14 +25,14 @@
 }
 
 .card-body table {
-  margin: 0 auto; /* Center the table horizontally */
-  border-collapse: collapse; /* Collapse the borders into a single border */
+  margin: 0 auto; 
+  border-collapse: collapse; 
 }
 
 .card-body td {
-  text-align: left; /* Align the table cell content to the left */
-  padding: 8px; /* Add some padding to the table cells */
-  border: 1px solid #ccc; /* Add a border to each table cell */
+  text-align: left; 
+  padding: 8px; 
+  border: 1px solid #ccc; 
 }
 
 .line {

@@ -47,6 +47,7 @@
   line-height: 1.5;
   background-color: #333;
   cursor: pointer;
+  transition: margin-top 0.5s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -80,14 +81,9 @@
 }
 
 .card.show-description .card-description {
-  max-height: 1000px; /* Adjust the max-height value to your needs */
-}
-
-.card-footer {
-  /* ...existing styles... */
-  transition: margin-top 0.5s ease-in-out;
+  max-height: 1000px;
 }
 
 .card.show-description .card-footer {
-  margin-top: 1rem; /* Adjust the margin-top value to your needs */
+  margin-top: 1rem; 
 }
